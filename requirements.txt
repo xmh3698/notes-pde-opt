@@ -1,0 +1,12 @@
+numpy
+scipy
+matplotlib
+torch
+deepxde
+scikit-learn
+h5py
+cma
+pandas
+meent
+nbconvert
+nbformat

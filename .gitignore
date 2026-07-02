@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environments
+.env
+.venv/
+venv/
+
+# Local logs and run outputs
+*.log
+/logs/
+/outcmaes/
+/result/
+/results/
+/image/
+
+# Data and trained artifacts
+/data/
+/train_data/
+/row_data/
+/model/
+/saved_models/
+*.mat
+*.npy
+*.npz
+*.pt
+
+# Archived notebooks are kept locally; scripts/notebooks contains exports.
+/notebook/
+/notebooks/
+.ipynb_checkpoints/
+
+# Local launch helpers
+*.bat
