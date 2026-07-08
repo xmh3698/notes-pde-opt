@@ -20,15 +20,11 @@ venv/
 /image/
 
 # Data and trained artifacts
-/data/
 /train_data/
 /row_data/
 /model/
 /saved_models/
 *.mat
-*.npy
-*.npz
-*.pt
 
 # Archived notebooks are kept locally; scripts/notebooks contains exports.
 /notebook/
