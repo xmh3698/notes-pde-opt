@@ -22,7 +22,6 @@ venv/
 # Data and trained artifacts
 /train_data/
 /row_data/
-/model/
 /saved_models/
 *.mat
 
