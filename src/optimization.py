@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import deepxde as dde
 from . import utils
 import argparse
+from pathlib import Path
 
 # ---------------------------
 # Parse command line arguments
@@ -168,8 +169,13 @@ print(f"Time taken: {end_time - start_time} seconds for NOTES {seed}")
 
 
 # Save results
-np.savez(f'result/cmaes/CMA-ES_{seed}.npz',**results)
-np.savez(f'result/opt_hist/CMA-ES_opt_hist_{seed}.npz', opt_hist=opt_hist)
+cmaes_dir = Path('result/cmaes')
+opt_hist_dir = Path('result/opt_hist')
+cmaes_dir.mkdir(parents=True, exist_ok=True)
+opt_hist_dir.mkdir(parents=True, exist_ok=True)
+
+np.savez(cmaes_dir / f'CMA-ES_{seed}.npz', **results)
+np.savez(opt_hist_dir / f'CMA-ES_opt_hist_{seed}.npz', opt_hist=opt_hist)
 #breakpoint()
 
 

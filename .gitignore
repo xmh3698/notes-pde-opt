@@ -32,3 +32,6 @@ venv/
 
 # Local launch helpers
 *.bat
+
+!model/model658
+model/
