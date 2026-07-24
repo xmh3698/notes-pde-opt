@@ -1,6 +1,14 @@
 numpy
 scipy
 matplotlib
+absl-py
+apache-beam
+autograd
+nlopt
+Pillow
+scikit-image
+seaborn
+xarray
 torch
 deepxde
 scikit-learn
@@ -8,5 +16,3 @@ h5py
 cma
 pandas
 meent
-nbconvert
-nbformat
