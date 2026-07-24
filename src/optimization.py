@@ -5,7 +5,7 @@ import torch
 import cma
 import matplotlib.pyplot as plt
 import deepxde as dde
-import utils
+from . import utils
 import argparse
 
 # ---------------------------

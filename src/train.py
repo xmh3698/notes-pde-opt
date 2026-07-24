@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import utils
+from . import utils
 from torch.nn import BCELoss
 import deepxde as dde
 import torch
@@ -26,7 +26,6 @@ d = np.load('data/90_all_all_val.npz')
 X_test_branch = d['X1'][:,:25].astype(np.float32)
 X_test_trunk = d['X2'].astype(np.float32)
 y_test = d['y'].astype(np.float32)
-breakpoint()
 
 
 # Define the data
